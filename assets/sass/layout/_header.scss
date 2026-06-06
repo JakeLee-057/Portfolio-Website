@@ -94,7 +94,9 @@
 
 		nav {
 			ul {
-				@include vendor('display', 'flex');
+				display: grid;
+				grid-auto-flow: column;
+				grid-auto-columns: 1fr;
 				margin-bottom: 0;
 				list-style: none;
 				padding-left: 0;
@@ -230,6 +232,7 @@
 
 			nav {
 				ul {
+					@include vendor('display', 'flex');
 					@include vendor('flex-direction', 'column');
 					min-width: 10rem;
 					max-width: 100%;
